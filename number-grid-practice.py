@@ -33,17 +33,39 @@ def test():
         grid()
         print "%s, use the grid to help you practice." % name
         ten_more(random)
+        ten_less(random)
     else:
         print "Okay, %s, have a nice day" % name
         #Some exit command? Maybe return?
         
+        
 def ten_more(number):
-    ten_more_input = int(input("What is ten more than %s? " % number))
-    if ten_more_input == number + 10:
-        print "Great job!"
-    else: 
-        print "Try again!"
+    ten_more_counter = 0
+    while ten_more_counter <= 2:
+        ten_more_input = int(input("What is ten more than %s? " % number))
+        if ten_more_input == number + 10:
+            print "Great job, %s!" % name
+            return
+        else: 
+            ten_more_counter = ten_more_counter + 1
+            if ten_more_counter == 2:
+                print "Better luck next time!"
+            else:
+                print "Try again!"
 
+def ten_less(number):
+    ten_less_counter = 0
+    while ten_less_counter <= 2:
+        ten_less_input = int(input("What is ten less than %s? " % number))
+        if ten_less_input == number - 10:
+            print "Great job, %s!" % name
+            return
+        else: 
+            ten_less_counter = ten_less_counter + 1
+            if ten_less_counter == 2:
+                print "Better luck next time, %s!" % name
+            else:
+                print "Try again!"
 #ten_more works. Now how do I make ten_more start over each time it's incorrect?
         
 test()
