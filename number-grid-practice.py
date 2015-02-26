@@ -1,4 +1,7 @@
 from random import randrange
+#from termcolor import colored
+#Can I add colors so the text in the terminal is more readable?
+#Also, figure out how to highlight the selected number.
 
 def grid():
     print
@@ -26,6 +29,7 @@ def grid():
     print
     
 def test():
+    global random, name, game_on
     random = randrange(1,100)
     name = raw_input("Hello, what is your name? ")
     game_on = raw_input("Hello, %s, would you like to practice thinking about numbers? " % name)
