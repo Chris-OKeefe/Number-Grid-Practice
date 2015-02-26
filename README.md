@@ -5,4 +5,10 @@ A simple python program for my daughter to use to develop number sense. The scri
 
 Current functionality: prints grid, asks for ten more than a randomly generated number on the grid. If ten more answer is correct, asks what ten less than the number is.
 
-Need to add additional questions, simplify (condense?) code. Not a big deal if efficiency is low, but good practice.
+
+
+###To do:
+* Tkinter to build a button array.
+* Gnureadline to make the display static (that is, so it doesn't move when a new line of text comes up.)
+* Add a random number generator for the question, connected to a dict ({'one':1, 'two':2, etc}) and "more" or "less".
+* In general: add additional questions, simplify (condense?) code. 
